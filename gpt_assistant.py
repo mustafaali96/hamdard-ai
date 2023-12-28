@@ -1,3 +1,7 @@
+# if error: ImportError: cannot import name 'OpenAI' from 'openai'
+# pip install --upgrade openai
+# streamlit run gpt_assistant.py
+
 import streamlit as st
 from openai import OpenAI
 from dotenv import load_dotenv
@@ -16,13 +20,13 @@ def get_session_state():
     if 'first_time' not in session_state:
         session_state.first_time = True
         session_state.messages = []  # Initialize an empty list to store messages
-        assistant = client.beta.assistants.create(
-            name='my-assistant',
-            instructions="You are an AI assistant.",
-            model='gpt-3.5-turbo-1106',
-            tools=[{'type':'retrieval'}]
-        )
-        print(assistant.id)
+        # assistant = client.beta.assistants.create(
+        #     name='my-assistant',
+        #     instructions="You are an AI assistant.",
+        #     model='gpt-3.5-turbo-1106',
+        #     tools=[{'type':'retrieval'}]
+        # )
+        # print(assistant.id)
     return session_state
 
 session_state = get_session_state()

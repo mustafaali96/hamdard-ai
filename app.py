@@ -1,3 +1,7 @@
+# if error downgrade openai
+# pip install openai==0.28
+# flask run
+
 from flask import Flask, jsonify,render_template
 import openai
 import os
