@@ -23,7 +23,7 @@ To install the repository, follow these steps:
    ```
    create .env file
    Add two values
-   OPENAI_API_KEY='sk-FFz******************c'
+   OPENAI_API_KEY='sk-FFz******************c' # Create OpenAI API Key https://platform.openai.com/account/api-keys
    ASSISTANT_ID='asst_7Jzn**********Te' # if created manually from openai platform
    ```
 
